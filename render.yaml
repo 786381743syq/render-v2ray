@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-v2ray
+    env: docker
+    region: oregon # 美国西海岸，速度更快
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 10000
